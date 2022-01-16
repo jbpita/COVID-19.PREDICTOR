@@ -1,0 +1,36 @@
+
+{% extends "layout.html" %}
+
+{% block contente%}
+	<form action="/prediccion" method="post">
+		<div class="container-fluid">
+			<h1 class="title">Ingresar Caracteristica</h1>
+
+			<div class="row">
+			  <div class="col-12 col-lg	items">
+			    <input required type="number" step="any" name="new_deaths_smoothed" class="form-control" placeholder="Nuevas muertes" aria-label="Nuevas muertes">
+			  </div>
+			  <div class="col-12 col-lg	items">
+			    <input required type="number" step="any" name="new_tests_smoothed" class="form-control" placeholder="Pruebas de COVID-19" aria-label="Pruebas de COVID-19">
+			  </div>
+			  <div class="col-12 col-lg	items">
+			    <input required type="number" step="any" name="positive_rate" class="form-control" placeholder="Pruebas positivas" aria-label="Pruebas positivas">
+			  </div>
+			  <div class="col-12 col-lg	items">
+			    <input required type="number" step="any" name="people_fully_vaccinated" class="form-control" placeholder="Vacunados (2 dosis)" aria-label="Vacunados (2 dosis)">
+			  </div>
+			  <div class="col-12 col-lg	items">
+			    <input required type="number" step="any" name="people_vaccinated" class="form-control" placeholder="Vacunados (almenos 1)" aria-label="Vacunados (almenos 1)">
+			  </div>
+			</div>
+
+			<div class="d-grid gap-2 col-12 col-lg-6 mx-auto">
+			  <button class="btn btn-dark" id="calcular" type="submit">Predecir</button>
+			</div>
+		</div>
+
+
+		<h2 class="title">Casos nuevos : {{c}}</h2>
+	</form>
+
+{% endblock %}

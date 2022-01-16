@@ -1,0 +1,23 @@
+*{
+	box-sizing: border-box;
+	margin: 0;
+}
+.title{
+	text-align: center;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+
+.items{
+	margin-bottom: 1rem;
+}
+
+.text-information{
+	text-align: justify;
+}
+
+.imagen-perfil{
+	min-height: 200px;
+	max-height: 200px;
+
+}

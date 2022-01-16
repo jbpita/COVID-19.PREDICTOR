@@ -1,0 +1,46 @@
+{% extends "layout.html" %}
+
+{% block contente%}
+	<h1 class="title">integrantes</h1>
+
+	<div class="container ">
+		<div class="row justify-content-center">
+			<div class="col-lg-4 col-12  items">
+	 			<div class="card rounded-3" style="width: 75%; margin: auto;">
+				  <img src="{{url_for('static', filename = 'assets/JORGE.jpg')}}" class="card-img-top imagen-perfil" alt="Jorge Pita">
+				  <div class="card-body">
+				    <h5 class="card-title">Jorge Pita</h5>
+				    <p class="card-text">Ing. Ciencias Computacionales 7mo Semestre.</p>
+				    
+				  </div>
+				</div>
+			</div>
+			
+
+			<div class="col-lg-4 col-12 items" >
+				<div class="card rounded-3" style="width: 75%; margin: auto;">
+				  <img src="{{url_for('static', filename = 'assets/YIAM.jpg')}}" class="card-img-top imagen-perfil" alt="Jorge Pita">
+				  <div class="card-body">
+				    <h5 class="card-title">Yian Rodriguez</h5>
+				    <p class="card-text">Ing. Ciencias Computacionales 9mo Semestre.</p>
+				    
+				  </div>
+				</div>
+			</div>
+
+			<div class="col-lg-4 col-12 items" >
+				<div class="card rounded-3" style="width: 75%; margin: auto;">
+				  <img src="{{url_for('static', filename = 'assets/KARINA.jpg')}}" class="card-img-top imagen-perfil" alt="Jorge Pita">
+				  <div class="card-body">
+				    <h5 class="card-title">Karina Ortega </h5>
+				    <p class="card-text">Ing. Ciencias Computacionales 7mo Semestre.</p>
+				    
+				  </div>
+				</div>
+			</div>
+		</div>
+			
+	</div>
+	
+
+{% endblock %}
